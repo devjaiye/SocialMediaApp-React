@@ -5,6 +5,8 @@ import Online from '../online/Online'
 
 const Rightbar = ({profile}) => {
 
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER
+
   const HomeRightbar = () => {
     return(
       <>
@@ -52,33 +54,34 @@ const Rightbar = ({profile}) => {
       {/* friend list */}
       <h4 className="rightbarTitle">User Friends</h4>
       <div className="rightbarFollowings">
-        <div className="rightbarFollowing">
-          <img src="assets/person/3.jpeg" alt="" className="rightbarFollowingImg" />
+
+      <div className="rightbarFollowing">
+          <img src={`${PF}person/4.jpeg`} alt="" className="rightbarFollowingImg" />
           <span className="rightbarFollowingName">Lorem Ipsum</span>
         </div>
 
         <div className="rightbarFollowing">
-          <img src="assets/person/7.jpeg" alt="" className="rightbarFollowingImg" />
+          <img src={`${PF}person/8.jpeg`} alt="" className="rightbarFollowingImg" />
           <span className="rightbarFollowingName">Lorem Ipsum</span>
         </div>
 
         <div className="rightbarFollowing">
-          <img src="assets/person/2.jpeg" alt="" className="rightbarFollowingImg" />
+          <img src={`${PF}person/9.jpeg`} alt="" className="rightbarFollowingImg" />
           <span className="rightbarFollowingName">Lorem Ipsum</span>
         </div>
 
         <div className="rightbarFollowing">
-          <img src="assets/person/1.jpeg" alt="" className="rightbarFollowingImg" />
+          <img src={`${PF}person/10.jpeg`} alt="" className="rightbarFollowingImg" />
           <span className="rightbarFollowingName">Lorem Ipsum</span>
         </div>
 
         <div className="rightbarFollowing">
-          <img src="assets/person/4.jpeg" alt="" className="rightbarFollowingImg" />
+          <img src={`${PF}person/5.jpeg`} alt="" className="rightbarFollowingImg" />
           <span className="rightbarFollowingName">Lorem Ipsum</span>
         </div>
 
         <div className="rightbarFollowing">
-          <img src="assets/person/5.jpeg" alt="" className="rightbarFollowingImg" />
+          <img src={`${PF}person/7.jpeg`} alt="" className="rightbarFollowingImg" />
           <span className="rightbarFollowingName">Lorem Ipsum</span>
         </div>
 
